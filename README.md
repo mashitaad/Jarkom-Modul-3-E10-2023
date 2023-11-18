@@ -7,7 +7,7 @@
 | Mavaldi Rizqy Hazdi  | 5025211086 |
 
 ## Topologi
-
+<img width="429" alt="image" src="https://github.com/mashitaad/Jarkom-Modul-3-E10-2023/assets/87978863/03c9ff79-6b7c-4bd3-bcd5-1feab36292e6">
 
 ## Soal Nomor 1
 Lakukan konfigurasi sesuai dengan peta yang sudah diberikan.
