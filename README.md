@@ -822,6 +822,7 @@ auth_basic_user_file /etc/nginx/rahasisakita/htpasswd;
 
 ![1](https://github.com/mavaldi/Image-Jarkom/raw/main/image.png)
 ![2](https://github.com/mavaldi/Image-Jarkom/raw/main/image-1.png)
+
 ![3](https://github.com/mavaldi/Image-Jarkom/raw/main/image-2.png)
 
 
