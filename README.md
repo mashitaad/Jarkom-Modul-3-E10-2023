@@ -290,7 +290,9 @@ service bind9 restart
 ```
 
 #### Result
+<img width="444" alt="Screenshot 2023-11-16 194050" src="https://github.com/mashitaad/Jarkom-Modul-3-E10-2023/assets/87978863/26f21c40-2fa7-4c5d-9df5-a1ad83caccff">
 
+<img width="447" alt="Screenshot 2023-11-16 194144" src="https://github.com/mashitaad/Jarkom-Modul-3-E10-2023/assets/87978863/c76dae6d-1651-4185-9684-b12f51ccdf8e">
 
 ## Soal Nomor 2
 Semua CLIENT harus menggunakan konfigurasi dari DHCP Server. Client yang melalui Switch3 mendapatkan range IP dari [prefix IP].3.16 - [prefix IP].3.32 dan [prefix IP].3.64 - [prefix IP].3.80
@@ -420,6 +422,8 @@ subnet 192.211.4.0 netmask 255.255.255.0 {
 ```
 
 #### Result
+Testing di Client (Kami di Ritcher)
+<img width="743" alt="Screenshot 2023-11-14 040109" src="https://github.com/mashitaad/Jarkom-Modul-3-E10-2023/assets/87978863/a43330bb-fedb-4626-9c29-4647b1e34652">
 
 ## Soal Nomor 6
 Pada masing-masing worker PHP, lakukan konfigurasi virtual host untuk website berikut dengan menggunakan php 7.3.
@@ -710,9 +714,10 @@ Karena diminta untuk menuliskan grimoire, buatlah analisis hasil testing dengan 
 - Generic Hash
 
 #### Grafik
+<img width="383" alt="Screenshot 2023-11-16 212126" src="https://github.com/mashitaad/Jarkom-Modul-3-E10-2023/assets/87978863/b921fcfd-3dd6-4b87-b36b-1a32629b01ef">
 
-#### Analisis
-  
+#### Result & Analisis
+Untuk analisis dan result kami telah membuat `grimoire` yang terdapat pada link ini` [link](https://docs.google.com/document/d/1ljMPB3LjMC2PWyexVv4hftRhu_OOxuhXtGdCN0910JA/edit?usp=sharing) ini.
 
 ## Soal Nomor 9
 Dengan menggunakan algoritma Round Robin, lakukan testing dengan menggunakan 3 worker, 2 worker, dan 1 worker sebanyak 100 request dengan 10 request/second, kemudian tambahkan grafiknya pada grimoire.
@@ -793,12 +798,15 @@ Dengan menggunakan algoritma Round Robin, lakukan testing dengan menggunakan 3 w
   ln -s /etc/nginx/sites-available/1worker /etc/nginx/sites-enabled/default
   service nginx restart
   ```
-
-#### Result
+  
+#### Testing
+- Lakukan perintah `htop` untuk mengecek request per second
 
 #### Grafik
+<img width="376" alt="Screenshot 2023-11-16 212144" src="https://github.com/mashitaad/Jarkom-Modul-3-E10-2023/assets/87978863/77d9c9c2-cb4d-4080-8c2e-8d32e1e9cde4">
 
-#### Analisis
+#### Analisis & Result
+Untuk analisis dan result kami telah membuat `grimoire` yang terdapat pada link ini` [link](https://docs.google.com/document/d/1ljMPB3LjMC2PWyexVv4hftRhu_OOxuhXtGdCN0910JA/edit?usp=sharing) ini.
 
 ## Soal Nomor 10
 Selanjutnya coba tambahkan konfigurasi autentikasi di LB dengan dengan kombinasi username: “netics” dan password: “ajkyyy”, dengan yyy merupakan kode kelompok. Terakhir simpan file “htpasswd” nya di /etc/nginx/rahasisakita/
