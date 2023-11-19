@@ -563,7 +563,7 @@ nginx -t
 
 #### Result
 - Lakukan `curl localhost` di salah satu worker
-
+  <img width="481" alt="Screenshot 2023-11-14 234430" src="https://github.com/mashitaad/Jarkom-Modul-3-E10-2023/assets/87978863/6c613b38-26ac-4b86-9758-97b6409a1440">
 - Atau, lakukan `lynx granz.channel.e10.com` di salah satu client
 
 ## Soal Nomor 7
@@ -717,7 +717,7 @@ Karena diminta untuk menuliskan grimoire, buatlah analisis hasil testing dengan 
 <img width="383" alt="Screenshot 2023-11-16 212126" src="https://github.com/mashitaad/Jarkom-Modul-3-E10-2023/assets/87978863/b921fcfd-3dd6-4b87-b36b-1a32629b01ef">
 
 #### Result & Analisis
-Untuk analisis dan result kami telah membuat `grimoire` yang terdapat pada link ini` [link](https://docs.google.com/document/d/1ljMPB3LjMC2PWyexVv4hftRhu_OOxuhXtGdCN0910JA/edit?usp=sharing) ini.
+Untuk analisis dan result kami telah membuat `grimoire` yang terdapat pada link ini [link](https://drive.google.com/file/d/1KI_Ml4J3lgAbXHSi3tGtAKVjvQyHAd36/view?usp=drive_link) ini.
 
 ## Soal Nomor 9
 Dengan menggunakan algoritma Round Robin, lakukan testing dengan menggunakan 3 worker, 2 worker, dan 1 worker sebanyak 100 request dengan 10 request/second, kemudian tambahkan grafiknya pada grimoire.
@@ -806,7 +806,7 @@ Dengan menggunakan algoritma Round Robin, lakukan testing dengan menggunakan 3 w
 <img width="376" alt="Screenshot 2023-11-16 212144" src="https://github.com/mashitaad/Jarkom-Modul-3-E10-2023/assets/87978863/77d9c9c2-cb4d-4080-8c2e-8d32e1e9cde4">
 
 #### Analisis & Result
-Untuk analisis dan result kami telah membuat `grimoire` yang terdapat pada link ini` [link](https://docs.google.com/document/d/1ljMPB3LjMC2PWyexVv4hftRhu_OOxuhXtGdCN0910JA/edit?usp=sharing) ini.
+Untuk analisis dan result kami telah membuat `grimoire` yang terdapat pada link ini [link](https://drive.google.com/file/d/1KI_Ml4J3lgAbXHSi3tGtAKVjvQyHAd36/view?usp=drive_link) ini.
 
 ## Soal Nomor 10
 Selanjutnya coba tambahkan konfigurasi autentikasi di LB dengan dengan kombinasi username: “netics” dan password: “ajkyyy”, dengan yyy merupakan kode kelompok. Terakhir simpan file “htpasswd” nya di /etc/nginx/rahasisakita/
