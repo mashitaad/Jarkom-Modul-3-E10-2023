@@ -7,7 +7,7 @@
 | Mavaldi Rizqy Hazdi  | 5025211086 |
 
 ## Topologi
-<img width="429" alt="image" src="https://github.com/mashitaad/Jarkom-Modul-3-E10-2023/assets/87978863/03c9ff79-6b7c-4bd3-bcd5-1feab36292e6">
+<img width="429" alt="Screenshot 2023-11-18 121604" src="https://github.com/mashitaad/Jarkom-Modul-3-E10-2023/assets/87978863/14c00b57-155f-49f1-8bf7-37a348b025c1">
 
 ## Soal Nomor 1
 Lakukan konfigurasi sesuai dengan peta yang sudah diberikan.
@@ -290,9 +290,10 @@ service bind9 restart
 ```
 
 #### Result
-<img width="444" alt="Screenshot 2023-11-16 194050" src="https://github.com/mashitaad/Jarkom-Modul-3-E10-2023/assets/87978863/26f21c40-2fa7-4c5d-9df5-a1ad83caccff">
+Kami melakukan tidak melakukan testing di Client melainkan di Worker karena sebelumnya load balancer dll belum disetup.
+<img width="444" alt="Screenshot 2023-11-16 194050" src="https://github.com/mashitaad/Jarkom-Modul-3-E10-2023/assets/87978863/0a55d568-6c2e-47ba-b829-910a47c96405">
 
-<img width="447" alt="Screenshot 2023-11-16 194144" src="https://github.com/mashitaad/Jarkom-Modul-3-E10-2023/assets/87978863/c76dae6d-1651-4185-9684-b12f51ccdf8e">
+<img width="447" alt="Screenshot 2023-11-16 194144" src="https://github.com/mashitaad/Jarkom-Modul-3-E10-2023/assets/87978863/4250b38c-abb2-4ebd-9036-70d041837bd3">
 
 ## Soal Nomor 2
 Semua CLIENT harus menggunakan konfigurasi dari DHCP Server. Client yang melalui Switch3 mendapatkan range IP dari [prefix IP].3.16 - [prefix IP].3.32 dan [prefix IP].3.64 - [prefix IP].3.80
@@ -423,7 +424,7 @@ subnet 192.211.4.0 netmask 255.255.255.0 {
 
 #### Result
 Testing di Client (Kami di Ritcher)
-<img width="743" alt="Screenshot 2023-11-14 040109" src="https://github.com/mashitaad/Jarkom-Modul-3-E10-2023/assets/87978863/a43330bb-fedb-4626-9c29-4647b1e34652">
+<img width="743" alt="Screenshot 2023-11-14 040109" src="https://github.com/mashitaad/Jarkom-Modul-3-E10-2023/assets/87978863/eedb4e5c-33ba-4933-898b-c79fb72941ed">
 
 ## Soal Nomor 6
 Pada masing-masing worker PHP, lakukan konfigurasi virtual host untuk website berikut dengan menggunakan php 7.3.
@@ -563,7 +564,8 @@ nginx -t
 
 #### Result
 - Lakukan `curl localhost` di salah satu worker
-  <img width="481" alt="Screenshot 2023-11-14 234430" src="https://github.com/mashitaad/Jarkom-Modul-3-E10-2023/assets/87978863/6c613b38-26ac-4b86-9758-97b6409a1440">
+  <img width="481" alt="Screenshot 2023-11-14 234430" src="https://github.com/mashitaad/Jarkom-Modul-3-E10-2023/assets/87978863/072b1ff9-cee1-4c67-b3ce-c7fff891a341">
+
 - Atau, lakukan `lynx granz.channel.e10.com` di salah satu client
 
 ## Soal Nomor 7
@@ -702,19 +704,8 @@ Karena diminta untuk menuliskan grimoire, buatlah analisis hasil testing dengan 
 - Lakukan `ab -n 200 -c 10 http://192.211.2.2/` di Client setiap melakukan setiap algoritma load balancer diatas
 - Lakukan juga `htop` `cat /var/log/nginx/access.log| grep "GET" | wc -l` di Worker
 
-#### Screenshot setiap testing
-- Round Robin
- 
-- Weighted Round Robin
- 
-- Least Connection
- 
-- IP Hash
-
-- Generic Hash
-
 #### Grafik
-<img width="383" alt="Screenshot 2023-11-16 212126" src="https://github.com/mashitaad/Jarkom-Modul-3-E10-2023/assets/87978863/b921fcfd-3dd6-4b87-b36b-1a32629b01ef">
+<img width="383" alt="Screenshot 2023-11-16 212126" src="https://github.com/mashitaad/Jarkom-Modul-3-E10-2023/assets/87978863/868ba900-39a4-4e24-8e1c-9f40e4ce79fb">
 
 #### Result & Analisis
 Untuk analisis dan result kami telah membuat `grimoire` yang terdapat pada link ini [link](https://drive.google.com/file/d/1KI_Ml4J3lgAbXHSi3tGtAKVjvQyHAd36/view?usp=drive_link) ini.
@@ -803,7 +794,7 @@ Dengan menggunakan algoritma Round Robin, lakukan testing dengan menggunakan 3 w
 - Lakukan perintah `htop` untuk mengecek request per second
 
 #### Grafik
-<img width="376" alt="Screenshot 2023-11-16 212144" src="https://github.com/mashitaad/Jarkom-Modul-3-E10-2023/assets/87978863/77d9c9c2-cb4d-4080-8c2e-8d32e1e9cde4">
+<img width="376" alt="Screenshot 2023-11-16 212144" src="https://github.com/mashitaad/Jarkom-Modul-3-E10-2023/assets/87978863/b7cf1582-c6cf-444f-9b5b-a5f4f3337e86">
 
 #### Analisis & Result
 Untuk analisis dan result kami telah membuat `grimoire` yang terdapat pada link ini [link](https://drive.google.com/file/d/1KI_Ml4J3lgAbXHSi3tGtAKVjvQyHAd36/view?usp=drive_link) ini.
