@@ -291,6 +291,7 @@ service bind9 restart
 
 #### Result
 Kami melakukan tidak melakukan testing di Client melainkan di Worker karena sebelumnya load balancer dll belum disetup.
+
 <img width="444" alt="Screenshot 2023-11-16 194050" src="https://github.com/mashitaad/Jarkom-Modul-3-E10-2023/assets/87978863/0a55d568-6c2e-47ba-b829-910a47c96405">
 
 <img width="447" alt="Screenshot 2023-11-16 194144" src="https://github.com/mashitaad/Jarkom-Modul-3-E10-2023/assets/87978863/4250b38c-abb2-4ebd-9036-70d041837bd3">
@@ -708,7 +709,7 @@ Karena diminta untuk menuliskan grimoire, buatlah analisis hasil testing dengan 
 <img width="383" alt="Screenshot 2023-11-16 212126" src="https://github.com/mashitaad/Jarkom-Modul-3-E10-2023/assets/87978863/868ba900-39a4-4e24-8e1c-9f40e4ce79fb">
 
 #### Result & Analisis
-Untuk analisis dan result kami telah membuat `grimoire` yang terdapat pada link ini [link](https://drive.google.com/file/d/1KI_Ml4J3lgAbXHSi3tGtAKVjvQyHAd36/view?usp=drive_link) ini.
+Untuk analisis dan result kami telah membuat `grimoire` yang terdapat pada link ini [E10_Grimoire](https://drive.google.com/file/d/1KI_Ml4J3lgAbXHSi3tGtAKVjvQyHAd36/view?usp=drive_link) ini.
 
 ## Soal Nomor 9
 Dengan menggunakan algoritma Round Robin, lakukan testing dengan menggunakan 3 worker, 2 worker, dan 1 worker sebanyak 100 request dengan 10 request/second, kemudian tambahkan grafiknya pada grimoire.
@@ -797,7 +798,7 @@ Dengan menggunakan algoritma Round Robin, lakukan testing dengan menggunakan 3 w
 <img width="376" alt="Screenshot 2023-11-16 212144" src="https://github.com/mashitaad/Jarkom-Modul-3-E10-2023/assets/87978863/b7cf1582-c6cf-444f-9b5b-a5f4f3337e86">
 
 #### Analisis & Result
-Untuk analisis dan result kami telah membuat `grimoire` yang terdapat pada link ini [link](https://drive.google.com/file/d/1KI_Ml4J3lgAbXHSi3tGtAKVjvQyHAd36/view?usp=drive_link) ini.
+Untuk analisis dan result kami telah membuat `grimoire` yang terdapat pada link ini [E10_Grimoire](https://drive.google.com/file/d/1KI_Ml4J3lgAbXHSi3tGtAKVjvQyHAd36/view?usp=drive_link) ini.
 
 ## Soal Nomor 10
 Selanjutnya coba tambahkan konfigurasi autentikasi di LB dengan dengan kombinasi username: “netics” dan password: “ajkyyy”, dengan yyy merupakan kode kelompok. Terakhir simpan file “htpasswd” nya di /etc/nginx/rahasisakita/
