@@ -871,23 +871,23 @@ Selanjutnya LB ini hanya boleh diakses oleh client dengan IP [Prefix IP].3.69, [
 - Masukkan script berikut ke Load Balancer `Eisen`
 ```ruby
 echo 'upstream worker {
-    server 192.173.3.1;
-    server 192.173.3.2;
-    server 192.173.3.3;
+    server 192.211.3.1;
+    server 192.211.3.2;
+    server 192.211.3.3;
 }
 
 server {
     listen 80;
-    server_name granz.channel.a09.com www.granz.channel.a09.com;
+    server_name granz.channel.e10.com www.granz.channel.e10.com;
 
     root /var/www/html;
     index index.html index.htm index.nginx-debian.html;
 
     location / {
-        allow 192.173.3.69;
-        allow 192.173.3.70;
-        allow 192.173.4.167;
-        allow 192.173.4.168;
+        allow 192.211.3.69;
+        allow 192.211.3.70;
+        allow 192.211.4.167;
+        allow 192.211.4.168;
         deny all;
         proxy_pass http://worker;
     }
