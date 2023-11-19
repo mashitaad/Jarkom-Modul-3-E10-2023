@@ -828,7 +828,9 @@ auth_basic_user_file /etc/nginx/rahasisakita/htpasswd;
 ### Result
 - Test dengan mengakses url `www.granz.channel.e10.com`
 
-![1]()
+![Alt text](image.png)
+![Alt text](image-1.png)
+![Alt text](image-2.png)
 
 ## Soal Nomor 11
 Lalu buat untuk setiap request yang mengandung /its akan di proxy passing menuju halaman https://www.its.ac.id. (11) hint: (proxy_pass)
@@ -870,7 +872,7 @@ service nginx restart
 lynx www.granz.channel.e10.com/its
 ```
 ### Result
-![1]()
+![Alt text](image-3.png)
 
 ## Soal Nomor 12
 Selanjutnya LB ini hanya boleh diakses oleh client dengan IP [Prefix IP].3.69, [Prefix IP].3.70, [Prefix IP].4.167, dan [Prefix IP].4.168. (12) hint: (fixed in dulu clinetnya)
@@ -921,7 +923,7 @@ host Richter {
 - Restart node `Richter`
 
 ### Result
-![1]()
+![Alt text](image-4.png)
 
 ## Soal Nomor 13
 Semua data yang diperlukan, diatur pada Denken dan harus dapat diakses oleh Frieren, Flamme, dan Fern. (13)
@@ -969,7 +971,7 @@ FLUSH PRIVILEGES;
 ```ruby
 mariadb --host=192.211.2.1 --port=3306 --user=kelompoke10 --password=passworde10 dbkelompoke10 -e "SHOW DATABASES;"
 ```
-![1]()
+![‎]()
 
 ## Soal Nomor 14
 Frieren, Flamme, dan Fern memiliki Riegel Channel sesuai dengan quest guide berikut. Jangan lupa melakukan instalasi PHP8.0 dan Composer
@@ -1093,7 +1095,7 @@ echo 'server {
 ```ruby
 lynx localhost:[port]
 ```
-![1]()
+![Alt text](image-5.png)
 
 ## Soal Nomor 15
 Granz Channel memiliki beberapa endpoint yang harus ditesting sebanyak 100 request dengan 10 request/second. Tambahkan response dan hasil testing pada grimoire. Untuk POST /api/auth/register
@@ -1112,7 +1114,9 @@ echo '
 ab -n 100 -c 10 -p register.json -T application/json http://192.211.4.1:8001/api/auth/register
 ```
 ### Result
-![1]()
+<img width="360" alt="image" src="image-6.png">
+
+<img width="360" alt="image" src="image-7.png">
 
 ## Soal Nomor 16
 Granz Channel memiliki beberapa endpoint yang harus ditesting sebanyak 100 request dengan 10 request/second. Tambahkan response dan hasil testing pada grimoire. Untuk POST /api/auth/login
@@ -1131,7 +1135,8 @@ echo '
 ab -n 100 -c 10 -p login.json -T application/json http://192.211.4.1:8001/api/auth/login
 ```
 ### Result
-![1]()
+![Alt text](image-8.png)
+![Alt text](image-9.png)
 
 ## Soal Nomor 17
 Granz Channel memiliki beberapa endpoint yang harus ditesting sebanyak 100 request dengan 10 request/second. Tambahkan response dan hasil testing pada grimoire. Untuk GET /api/me
@@ -1151,7 +1156,8 @@ token=$(cat login_output.txt | jq -r '.token')
 ab -n 100 -c 10 -H "Authorization: Bearer $token" http://192.211.4.1:8001/api/me
 ```
 ### Result
-![1]()
+![Alt text](image-10.png)
+![Alt text](image-11.png)
 
 ## Soal Nomor 18
 Untuk memastikan ketiganya bekerja sama secara adil untuk mengatur Riegel Channel maka implementasikan Proxy Bind pada Eisen untuk mengaitkan IP dari Frieren, Flamme, dan Fern
@@ -1184,7 +1190,8 @@ service nginx restart
 ```ruby
 ab -n 100 -c 10 -p login.json -T application/json http://www.riegel.canyon.e10.com/api/auth/login
 ```
-![1]()
+![Alt text](image-12.png)
+![Alt text](image-13.png)
 
 ## Soal Nomor 19
 Untuk meningkatkan performa dari Worker, coba implementasikan PHP-FPM pada Frieren, Flamme, dan Fern. Untuk testing kinerja naikkan 
@@ -1294,13 +1301,13 @@ service php8.0-fpm restart
 
 ### Result
 - Script 1
-
+![Alt text](image-14.png)
 - Script 2
-
+![Alt text](image-15.png)
 - Script 3
-
+![Alt text](image-16.png)
 - Script 4
-
+![Alt text](image-17.png)
 
 ## Soal Nomor 20
 Nampaknya hanya menggunakan PHP-FPM tidak cukup untuk meningkatkan performa dari worker maka implementasikan Least-Conn pada Eisen. Untuk testing kinerja dari worker tersebut dilakukan sebanyak 100 request dengan 10 request/second
@@ -1329,4 +1336,4 @@ service nginx restart
 ```
 
 ### Result
-![1]()
+![Alt text](image-18.png)
