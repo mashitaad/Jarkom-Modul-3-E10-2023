@@ -564,7 +564,6 @@ nginx -t
 #### Result
 - Lakukan `curl localhost` di salah satu worker
   <img width="481" alt="Screenshot 2023-11-14 234430" src="https://github.com/mashitaad/Jarkom-Modul-3-E10-2023/assets/87978863/6c613b38-26ac-4b86-9758-97b6409a1440">
-
 - Atau, lakukan `lynx granz.channel.e10.com` di salah satu client
 
 ## Soal Nomor 7
@@ -702,6 +701,17 @@ Karena diminta untuk menuliskan grimoire, buatlah analisis hasil testing dengan 
 #### Testing
 - Lakukan `ab -n 200 -c 10 http://192.211.2.2/` di Client setiap melakukan setiap algoritma load balancer diatas
 - Lakukan juga `htop` `cat /var/log/nginx/access.log| grep "GET" | wc -l` di Worker
+
+#### Screenshot setiap testing
+- Round Robin
+ 
+- Weighted Round Robin
+ 
+- Least Connection
+ 
+- IP Hash
+
+- Generic Hash
 
 #### Grafik
 <img width="383" alt="Screenshot 2023-11-16 212126" src="https://github.com/mashitaad/Jarkom-Modul-3-E10-2023/assets/87978863/b921fcfd-3dd6-4b87-b36b-1a32629b01ef">
